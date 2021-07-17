@@ -1,0 +1,212 @@
+.gradient {
+  width: 100%;
+  height: 70%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.6) 100%);
+}
+.blackout {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  transition: 0.15s;
+}
+.item:hover .blackout {
+  background: rgba(0, 0, 0, 0.7);
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+/* ------------------------ Основные стили ------------------------ */
+* {
+  margin: 0px;
+  padding: 0px;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+html {
+  font-family: 'suisse', sans-serif;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+/* --- Разметка --- */
+.layout-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.row {
+  font-size: 0px;
+}
+.layout-02 {
+  width: 156px;
+}
+.layout-03 {
+  width: 252px;
+}
+.layout-04 {
+  width: 348px;
+}
+.layout-05 {
+  width: 444px;
+}
+.layout-06 {
+  width: 540px;
+}
+.layout-07 {
+  width: 636px;
+}
+.layout-08 {
+  width: 732px;
+}
+.layout-09 {
+  width: 828px;
+}
+.layout-10 {
+  width: 924px;
+  margin: 0px auto;
+  font-size: 0px;
+}
+.layout-12 {
+  width: 1116px;
+  margin: 0px auto;
+  font-size: 0px;
+}
+.col {
+  margin-right: 36px;
+  display: inline-block;
+}
+.col:last-child {
+  margin-right: 0px;
+}
+.layout-03.col:nth-child(4n) {
+  margin-right: 0px;
+}
+.layout-04.col:nth-child(3n) {
+  margin-right: 0px;
+}
+.layout-06.col:nth-child(2n) {
+  margin-right: 0px;
+}
+.layout-09 .layout-03.col:nth-child(3n) {
+  margin-right: 0px;
+}
+.layout-09 .layout-03.col:nth-child(4n) {
+  margin-right: 36px;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.breadcrumbs {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #999;
+}
+.breadcrumbs a {
+  color: #999;
+}
+.breadcrumbs .current-item {
+  display: none;
+}
+p {
+  font-size: 1rem;
+}
+p:last-child {
+  margin-bottom: 0px !important;
+}
+.mobile {
+  display: none !important;
+}
+/* ------------------------ Мобильная версия ------------------------ */
+@media all and (max-width: 1024px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: inherit !important;
+  }
+}
+/* ------------------------ Мобильная версия ------------------------ */
+@media all and (max-width: 1024px) {
+  body {
+    width: 70%;
+  }
+  /* --- Разметка --- */
+  .row {
+    font-size: 0px;
+  }
+  .layout-02 {
+    width: 100%;
+  }
+  .layout-03 {
+    width: 100%;
+  }
+  .layout-04 {
+    width: 100%;
+  }
+  .layout-05 {
+    width: 100%;
+  }
+  .layout-06 {
+    width: 100%;
+  }
+  .layout-07 {
+    width: 100%;
+  }
+  .layout-08 {
+    width: 100%;
+  }
+  .layout-09 {
+    width: 100%;
+  }
+  .layout-10 {
+    width: 100%;
+    margin: 0px auto;
+    font-size: 0px;
+  }
+  .layout-12 {
+    width: 100%;
+    margin: 0px auto;
+    font-size: 0px;
+  }
+  .col {
+    margin-right: 0px;
+    display: inline-block;
+  }
+  .layout-09 .layout-03.col:nth-child(4n) {
+    margin-right: 0px;
+  }
+  .breadcrumbs {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #999;
+  }
+  .breadcrumbs a {
+    color: #999;
+  }
+  .breadcrumbs .current-item {
+    display: none;
+  }
+}

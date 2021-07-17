@@ -1,0 +1,195 @@
+/* ------------------------ Основные стили ------------------------ */
+* {margin: 0px; padding: 0px; vertical-align: top; box-sizing: border-box;}
+html {
+	font-family: 'suisse', sans-serif;
+}
+// body {
+// 	background-color: #000;
+// }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {display: block;}
+
+
+/* --- Разметка --- */
+.layout-page {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;}
+
+
+
+.row {font-size: 0px;}
+.layout-02 {width: 156px;}
+.layout-03 {width: 252px;}
+.layout-04 {width: 348px;}
+.layout-05 {width: 444px;}
+.layout-06 {width: 540px;}
+.layout-07 {width: 636px;}
+.layout-08 {width: 732px;}
+.layout-09 {width: 828px;}
+.layout-10 {width: 924px; margin: 0px auto; font-size: 0px;}
+.layout-12 {width: 1116px; margin: 0px auto; font-size: 0px;}
+
+.col {margin-right: 36px; display: inline-block;}
+.col:last-child {margin-right: 0px;}
+
+.layout-03.col:nth-child(4n) {margin-right: 0px;}
+.layout-04.col:nth-child(3n) {margin-right: 0px;}
+.layout-06.col:nth-child(2n) {margin-right: 0px;}
+
+.layout-09 .layout-03.col:nth-child(3n) {margin-right: 0px;}
+.layout-09 .layout-03.col:nth-child(4n) {margin-right: 36px;}
+
+
+
+
+a {color: #000; text-decoration: none;}
+
+
+
+li {
+	list-style: none;
+}
+
+
+.breadcrumbs {
+	margin-bottom: 10px;
+	font-size: 14px;
+	color: #999;
+
+	a {
+		color: #999;
+	}
+
+	.current-item {
+		display: none;
+	}
+}
+
+
+// h1 {
+// 	font-size: 39px;
+// 	font-weight: 800;
+// 	line-height: 41px;
+// }
+
+// h2 {
+// 	font-size: 36px;
+//     line-height: 40px;
+//     font-weight: 700;
+// 	margin-bottom: 30px;
+// 	text-align: center;
+// }
+
+
+
+// h3 {
+// 	margin-bottom: 20px;
+// 	font-size: 32px;
+// 	font-weight: 700;
+// }
+
+
+p {font-size: 1rem;}
+
+
+p:last-child {margin-bottom: 0px !important;}
+
+
+.desktop {}
+.mobile {
+	display: none !important;
+}
+
+
+/* ------------------------ Мобильная версия ------------------------ */
+@media all and (max-width: 1024px) {
+
+.desktop {
+	display: none;
+}
+.mobile {
+	display: inherit !important;
+}
+
+} // Конец запроса
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------ Мобильная версия ------------------------ */
+@media all and (max-width: 1024px) {
+
+body {
+	width: 70%;
+}
+
+/* --- Разметка --- */
+
+.row {font-size: 0px;}
+.layout-02 {width: 100%;}
+.layout-03 {width: 100%;}
+.layout-04 {width: 100%;}
+.layout-05 {width: 100%;}
+.layout-06 {width: 100%;}
+.layout-07 {width: 100%;}
+.layout-08 {width: 100%;}
+.layout-09 {width: 100%;}
+.layout-10 {width: 100%; margin: 0px auto; font-size: 0px;}
+.layout-12 {width: 100%; margin: 0px auto; font-size: 0px;}
+
+.col {margin-right: 0px; display: inline-block;}
+
+.layout-09 .layout-03.col:nth-child(4n) {margin-right: 0px;}
+
+
+
+.breadcrumbs {
+	margin-bottom: 10px;
+	font-size: 14px;
+	color: #999;
+
+	a {
+		color: #999;
+	}
+
+	.current-item {
+		display: none;
+	}
+}
+
+
+// h1 {
+// 	font-size: 24px;
+//     line-height: 26px;
+// 	font-weight: 800;
+// }
+
+// h2 {
+// 	font-size: 32px;
+// 	font-weight: 700;
+// 	margin-bottom: 40px;
+// 	text-align: center;
+// }
+
+
+
+// h3 {
+// 	margin-bottom: 10px;
+// 	font-size: 23px;
+// 	font-weight: bold;
+// }
+
+
+
+
+
+} // Конец запроса
